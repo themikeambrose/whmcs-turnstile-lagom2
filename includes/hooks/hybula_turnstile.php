@@ -16,15 +16,6 @@
 
 declare(strict_types=1);
 
-const hybulaTurnstileEnabled = true;
-const hybulaTurnstileCredits = false;
-const hybulaTurnstileExcludeLogin = true;
-const hybulaTurnstileSite = 'YOUR_TURNSTILE_SITE_KEY';
-const hybulaTurnstileSecret = 'YOUR_TURNSTILE_SECRET_KEY';
-const hybulaTurnstileTheme = 'light';
-const hybulaTurnstileError = 'Something went wrong with your captcha challenge!';
-const hybulaTurnstileLocations = ['login', 'register', 'checkout', 'ticket', 'contact'];
-
 if (!defined('WHMCS')) {
     die('This file cannot be accessed directly!');
 }
