@@ -1,6 +1,30 @@
 # WHMCS Turnstile Captcha
 Enables Cloudflare's [Turnstile](https://www.cloudflare.com/products/turnstile/) Captcha service in abandonware WHMCS. *This is currently a proof-of-concept, please report issues.*
 
+This fork has modifications to support RSStudio Lagom2 theme for WHMCS.
+
+# Lagom2 Custom CSS Changes
+For this to work with Lagom2 you must add this custom CSS below to get positioning correct.
+Go to RStheme --> Styles --> Modern --> Custom CSS and add the following code then clear cache.
+```CSS
+.cf-turnstile {
+    height: 65px;
+    margin-bottom: 12px;
+}
+.register-page .form-actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.page-contact .form-actions{
+    flex-direction: column;
+}
+.page-supportticketsubmit-steptwo.lagom-not-portal .form-actions{
+    display: block;
+}
+```
+
 ![](https://github.com/hybula/whmcs-turnstile/assets/8611981/a4a11d07-ecaa-4f98-b461-13534222fd35)
 
 ### Introduction
