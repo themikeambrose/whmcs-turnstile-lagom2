@@ -26,7 +26,7 @@ if (!empty($_POST) && (!isset($_SESSION['uid']) && hybulaTurnstileExcludeLogin))
             ($pageFile == 'register' && in_array('register', hybulaTurnstileLocations)) ||
             ($pageFile == 'contact' && in_array('contact', hybulaTurnstileLocations)) ||
             ($pageFile == 'submitticket' && in_array('ticket', hybulaTurnstileLocations)) ||
-            ($pageFile == 'cart' && $_GET['a'] == 'checkout' && in_array('checkout', hybulaTurnstileLocations))) && hybulaTurnstileEnabled) {
+            ($pageFile == 'cart' && $_GET['a'] == 'checkout' && in_array('checkout', hybulaTurnstileLocations))) && hybulaTurnstileEnabled && !$_POST['promocode']) {
         if (!isset($_POST['cf-turnstile-response'])) {
             unset($_SESSION['uid']);
             die('Missing captcha response in POST data!');
