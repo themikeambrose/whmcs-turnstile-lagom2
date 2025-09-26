@@ -1,3 +1,5 @@
+**NOTE: This triggers on all pages and was noticed to cause the admin general settings > mail > smtp setting modal to not work. When testing or saving it fails to save mail settings until you disable the hook. This specific fork isn't maintained so it's recommended to use the built-in hCaptcha in WHMCS or demand WHMCS staff to add Turnstile directly, since the WHMCS team has refused to implement Turnstile despite years of requests and offering to pay them to implement it (despite us already paying for WHMCS in the first place...)**
+
 # WHMCS Turnstile Captcha
 Enables Cloudflare's [Turnstile](https://www.cloudflare.com/products/turnstile/) Captcha service in abandonware WHMCS. *This is currently a proof-of-concept, please report issues.*
 
